@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/home.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+    	<div class="pre-nav">
+			<div class="container">
+				<div class="col-md-5">
+					<address>
+						<img id="address-icon" src="./assets/img/marker-white.svg"/>
+						<p>Rua Florinda Marques, 25, Planalto, Muriaé - MG</p>
+					</address>
+				</div>
+				<div class="col-md-4">
+					<a id="phone" href="phone:2332324545">
+						<img id="phone-icon" src="./assets/img/phone-white.svg"/>
+						<p>(32) 3232-4545</p>
+					</a>
+				</div>
+				<div class="col-md-2 text-right">
+					<a id="facebook-top" href="#">
+						<img src="./assets/img/facebook.svg"/>
+					</a>
+					<a id="youtube-top" href="#">
+						<img src="./assets/img/youtube.svg"/>
+					</a>
+				</div>
+				<div class="col-md-1 text-right">
+					<a id="search-top" href="#">
+						<img src="./assets/img/search.svg"/>
+					</a>
+				</div>
+    		</div>
+    	</div>
+		<nav class="navbar navbar-static-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#"><img src="./assets/brand/brand-icon.svg" alt="Logo IEADPlan Muriaé" title="IEADPlan Muriáe"/> </a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav nav-justified">
+				<li><a href="#"><span>Jesus</span></a></li>
+				<li class="active"><a href="index.html"><span>Home</span></a></li>
+				<li><a href="about-us.html"><span>A Igreja</span></a></li>
+				<li><a href="#ews"><span>Notícias</span></a></li>
+				<li><a href="#blog"><span>Blog</span></a></li>
+				<li><a href="#events"><span>Eventos</span></a></li>
+				<li><a href="contact-us.html"><span>Contato</span></a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="./assets/img/banner.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Horários de Cultos</h1>
+              <div class="col-md-3">
+				<p><strong>Domingo:</strong><br/>
+            	09:00 - Escola Bíblica Dominical<br/>
+             	19:00 - Culto de Louvor e Adoração</p>
+              </div>
+               <div class="col-md-3">
+				<p><strong>Terças-Feiras:</strong><br/>
+             	19:30 - Culto de Estudo Bíblico</p>
+              </div>
+               <div class="col-md-3">
+				<p><strong>Quartas-Feiras:</strong><br/>
+             	19:30 - Culto de Oração</p>
+              </div>
+               <div class="col-md-3">
+				<p><strong>Quintas-Feiras:</strong><br/>
+             	19:00 - Culto de Louvor e Adoração</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+    
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>
+			<img id="hands-in-heart" src="./assets/img/hands-in-heart.png" alt="hands-in-heart" title="hands-in-heart"/>
+			Venha nos fazer uma visita !
+     	</h1>
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      
+      <!-- START THE FEATURETTES -->
+      <div class="row news-home">
+		  <h1 class="title border-red">Notícias Recentes</h1>
+
+		 <div class="col-md-8">
+			<div class="row featurette">
+				<div class="col-md-5">
+				  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+				<div class="col-md-7">
+				  <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+			  </div>
+
+			  <hr class="featurette-divider">
+
+			  <div class="row featurette">
+				<div class="col-md-5">
+				  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+				<div class="col-md-7">
+				  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+
+			  </div>
+
+			  <hr class="featurette-divider">
+		 </div>
+		<div class="col-md-4">
+    		<div class="row featurette">
+				<div class="col-md-12">
+				  <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+			  </div>
+
+			  <hr class="featurette-divider">
+
+			  <div class="row featurette">
+				<div class="col-md-12">
+				  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+
+			  </div>
+
+			  <hr class="featurette-divider">
+
+			  <div class="row featurette">
+				<div class="col-md-12">
+				  <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+			  </div>
+
+			  <hr class="featurette-divider">
+		</div>
+     </div>
+ </div><!-- /.container -->
+     	<!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="parallax">
+    <div class="container-fluid">
+      <div class="container">
+		<div class="row events-home">
+			<h1 class="title border-yellow">Calendário da Igreja</h1>
+			<div class="col-md-6">
+				<div class="event-home">
+					<div class="date">
+						<span class="day">26</span>
+						<hr class="date-divider">
+						<span class="month">12</span>
+					</div>
+					<div class="content">
+						<h2 class="event-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+				</div>
+				<hr class="events-divider">
+			</div>
+				<div class="col-md-6">
+				<div class="event-home">
+					<div class="date">
+						<span class="day">26</span>
+						<hr class="date-divider">
+						<span class="month">12</span>
+					</div>
+					<div class="content">
+						<h2 class="event-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+				</div>
+				<hr class="events-divider">
+			</div>
+				<div class="col-md-6">
+				<div class="event-home">
+					<div class="date">
+						<span class="day">26</span>
+						<hr class="date-divider">
+						<span class="month">12</span>
+					</div>
+					<div class="content">
+						<h2 class="event-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+				</div>
+			</div>
+				<div class="col-md-6">
+				<div class="event-home">
+					<div class="date">
+						<span class="day">26</span>
+						<hr class="date-divider">
+						<span class="month">12</span>
+					</div>
+					<div class="content">
+						<h2 class="event-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+      </div>
+    </div>
+  </div>
+	<div class="container">
+		<div class="col-md-6">
+			<div class="featurette-post"  style="background-image: url('./assets/img/banner.png');">
+				<div class="align-items-center">
+					<div class="post-abstract">
+						<h1 class="title border-red">Ultimo post</h1>
+						<h2 class="post-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						<a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="col-md-6 featurette-posts">
+		 	<h1 class="title border-red">Posts Recentes</h1>
+			<div class="row featurette">
+				<div class="col-md-4">
+				  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+				<div class="col-md-8">
+				  <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+			  </div>
+
+			  <hr class="featurette-divider">
+
+			  <div class="row featurette">
+				<div class="col-md-4">
+				  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+				</div>
+				<div class="col-md-8">
+				  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+				  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+				  <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+				</div>
+
+			  </div>
+
+			  <hr class="featurette-divider">
+		 </div>
+	</div>
+      
+
+      <!-- /END THE FEATURETTES -->
+
+     	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron verse-of-the-day">
+      <div class="container">
+       <h1 class="title">Versículo do dia</h1>
+      	<h3>Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo,</h3>
+      	<p>Mateus 28:19</p>
+      </div>
+    </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="col-md-6">&copy; 2016 <strong>Thamys Guedes</strong>, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="col-md-6 text-right"><a href="#">Back to top</a></p>
+      </footer>
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

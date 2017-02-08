@@ -1,0 +1,298 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+	margin-bottom: 60px;
+	color: #332A2A;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.navbar-wrapper .pre-nav {
+	background-color: #332A2A;
+}
+
+.navbar-wrapper .pre-nav > .container {
+	padding: 0 15px 0 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 40px;
+}
+
+.navbar-wrapper .pre-nav p{
+	margin: 0;
+}
+
+.navbar-wrapper .pre-nav address, .navbar-wrapper .pre-nav #phone{
+	text-align: left;
+	margin: 0;
+	color: #fff;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.navbar-wrapper .pre-nav #address-icon, .navbar-wrapper .pre-nav #phone-icon{
+	height: 20px;
+	float: left;
+	padding-right: 5px;
+}
+
+.navbar-wrapper .pre-nav #facebook-top > img, .navbar-wrapper .pre-nav #youtube-top >img{
+	height: 30px;
+	margin-right: 10px;
+}
+
+.navbar-wrapper .pre-nav #search-top{
+	position: absolute;
+	right: 0;
+	top: -20px;
+	z-index: 10000;
+}
+
+.navbar-wrapper .pre-nav #search-top > img{
+	width: 50px;	
+}
+
+.navbar-wrapper .navbar {
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: rgba(51,42,42,0.6);
+	margin: 0;
+}
+
+.navbar-brand{
+	padding: 10px 0 0;
+	position: absolute;
+	top: -40px;
+}
+
+.navbar-brand > img{
+	height: 80px;
+}
+
+
+.nav.navbar-nav.nav-justified {
+	width: calc(100% - 130px);
+	float: right;
+	margin-right: 50px;
+}
+
+
+.nav.navbar-nav.nav-justified > li {
+  float: none;
+}
+
+.nav.navbar-nav.nav-justified > li > a {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Abel', sans-serif;
+	font-size: 21px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav.navbar-nav.nav-justified > li > a > span {
+	display: table;
+	margin: 0 auto;
+}
+.nav.navbar-nav.nav-justified > li.active > a{
+	padding-bottom: 9px;
+}
+
+.nav.navbar-nav.nav-justified > li.active > a > span{
+	border-bottom: 3px solid #FFF8A5;
+	text-shadow: #fff 0px 0px 2px;
+	padding-bottom: 3px;
+}
+
+/* Page
+------------------------- */
+
+.title{
+	font-family: 'Abel', sans-serif;
+	text-transform: uppercase;
+    display: table;
+    margin: 30px auto 50px;
+}
+
+.border-red{
+    border-bottom: 5px solid #D83636;
+}
+
+.border-yellow{
+    border-bottom: 5px solid #FFF8A5;
+}
+
+.title.inner-title{
+	font-size: 21px;
+	margin: 10px 0 15px;
+}
+
+.text{
+	margin-bottom: 30px;
+}
+
+.text.two-colums{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.parallax { 
+    /* The image used */
+    background-image: url("../img/banner.png");
+
+    /* Set a specific height */
+    min-height: 20px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-bottom: 30px;
+}
+
+.parallax > div{
+	background-color: rgba(51,42,42,0.85);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	min-height: 20px;;
+	padding: 25px 0 0;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+   color: #fff;
+}
+.marketing h2 {
+  font-weight: 600;
+	color: #FFF8A5;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing .col-lg-4 img{
+	border: 2px solid #FFF8A5;
+}
+
+/* About the Shepherds
+-------------------------------------------------- */
+.shepherds .col-md-4{
+	padding-left: 0;
+}
+
+.shepherds .title.inner-title{
+	margin: 10px 15px 15px;
+}
+
+/* Verse of the day
+------------------------- */
+.verse-of-the-day{
+	margin: 0;
+}
+
+.verse-of-the-day h1.title{
+	display: table;
+	text-align: left;
+	font-size: 21px;
+	margin: 15px 0;
+	border-bottom: 3px solid #FFF8A5;
+}
+
+.verse-of-the-day h3{
+	text-align: center;
+	font-style: italic;
+}
+
+.verse-of-the-day p{
+	text-align: center;
+}
+
+.schedule-of-worship, .contact-info{
+	color: #fff;
+}
+
+.schedule-of-worship .two-colums{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+.schedule-of-worship .title{
+	display: block;
+	text-align: left;
+	margin: 0 0 20px;
+}
+
+.contact-info .title{
+	display: block;
+	text-align: right;
+	margin: 0 0 20px;
+}
+
+.footer-social-media img{
+	height: 30px;
+}
+
+/* Footer
+------------------------- */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #332A2A;
+	color: #fff;
+	font-family: 'Abel', sans-serif;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+}
+
+footer p{
+	margin: 0;
+}
+
+footer a{
+	color: #FFF8A5;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
