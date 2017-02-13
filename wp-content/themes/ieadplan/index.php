@@ -7,7 +7,7 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img class="first-slide" src="./assets/img/banner.png" alt="First slide">
+              <img class="first-slide" src="<?php echo get_template_directory_uri() ?>./assets/img/banner.png" alt="First slide">
               <div class="container">
                 <div class="carousel-caption">
                   <h1>Horários de Cultos</h1>
@@ -38,7 +38,7 @@
         <div class="jumbotron">
           <div class="container">
             <h1>
-                <img id="hands-in-heart" src="./assets/img/hands-in-heart.png" alt="hands-in-heart" title="hands-in-heart"/>
+                <img id="hands-in-heart" src="<?php echo get_template_directory_uri() ?>./assets/img/hands-in-heart.png" alt="hands-in-heart" title="hands-in-heart"/>
                 Venha nos fazer uma visita !
             </h1>
           </div>
@@ -56,64 +56,59 @@
               <h1 class="title border-red">Notícias Recentes</h1>
 
              <div class="col-md-8">
-                <div class="row featurette">
-                    <div class="col-md-5">
-                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
-                    <div class="col-md-7">
-                      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-                  </div>
+                 <?php
+                 // Se houver posts
+                 if(have_posts()):
+                     // Enquanto houver posts, chame o post
+                     while (have_posts()): the_post();
 
-                  <hr class="featurette-divider">
-
-                  <div class="row featurette">
-                    <div class="col-md-5">
-                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
-                    <div class="col-md-7">
-                      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-
-                  </div>
-
-                  <hr class="featurette-divider">
+                         ?>
+                         <div class="row featurette">
+                             <div class="col-md-5">
+                                 <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                             </div>
+                             <div class="col-md-7">
+                                 <h2 class="featurette-heading"> <?php the_title(); ?> </h2>
+                                 <p class="lead"><?php the_content() ?></p>
+                                 <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
+                             </div>
+                         </div>
+                         <hr class="featurette-divider">
+                         <?php
+                     endwhile;
+                 else:
+                     ?>
+                     <p>Não há notícias para mostrar</p>
+                     <?php
+                 endif;
+                 ?>
              </div>
             <div class="col-md-4">
-                <div class="row featurette">
-                    <div class="col-md-12">
-                      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-                  </div>
 
-                  <hr class="featurette-divider">
+                <?php
+                // Se houver posts
+                if(have_posts()):
+                    // Enquanto houver posts, chame o post
+                    while (have_posts()): the_post();
 
-                  <div class="row featurette">
-                    <div class="col-md-12">
-                      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
+                        ?>
+                        <div class="row featurette">
+                            <div class="col-md-12">
+                                <h2 class="featurette-heading"><?php the_title(); ?></h2>
+                                <p class="lead"><?php the_content() ?></p>
+                                <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
+                            </div>
+                        </div>
 
-                  </div>
-
-                  <hr class="featurette-divider">
-
-                  <div class="row featurette">
-                    <div class="col-md-12">
-                      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-                  </div>
-
-                  <hr class="featurette-divider">
+                        <hr class="featurette-divider">
+                        <?php
+                    endwhile;
+                else:
+                    ?>
+                    <p>Não há notícias para mostrar</p>
+                    <?php
+                endif;
+                ?>
             </div>
          </div>
      </div><!-- /.container -->
@@ -190,39 +185,43 @@
                             <h1 class="title border-red">Ultimo post</h1>
                             <h2 class="post-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
                             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
+                            <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
                         </div>
                     </div>
                 </div>
             </div>
              <div class="col-md-6 featurette-posts">
                 <h1 class="title border-red">Posts Recentes</h1>
-                <div class="row featurette">
-                    <div class="col-md-4">
-                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
-                    <div class="col-md-8">
-                      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-                  </div>
+                 <?php
+                 // Se houver posts
+                 if(have_posts()):
+                     // Enquanto houver posts, chame o post
+                     while (have_posts()): the_post();
 
-                  <hr class="featurette-divider">
+                         ?>
+                         <div class="row featurette">
+                             <div class="col-md-4">
+                                 <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                             </div>
+                             <div class="col-md-8">
+                                 <h2 class="featurette-heading"><?php the_title(); ?></h2>
+                                 <p> Publicado em: <?php echo get_the_date(); ?> por <?php the_author(); ?>. </p>
+                                 <p> Categoria: <?php the_category(); ?> </p>
+                                 <p> <?php the_tags('Tags: ', ','); ?> </p>
+                                 <p class="lead"><?php the_content() ?></p>
+                                 <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
+                             </div>
+                         </div>
 
-                  <div class="row featurette">
-                    <div class="col-md-4">
-                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
-                    <div class="col-md-8">
-                      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                      <a href="#" class="read-more">Continuar lendo <img src="./assets/img/long-arrow-right.svg"></a>
-                    </div>
-
-                  </div>
-
-                  <hr class="featurette-divider">
+                         <hr class="featurette-divider">
+                         <?php
+                     endwhile;
+                 else:
+                     ?>
+                     <p>Não há notícias para mostrar</p>
+                     <?php
+                 endif;
+                 ?>
              </div>
         </div>
     </main>
