@@ -44,7 +44,7 @@
             <div class="jumbotron">
                 <div class="container">
                     <h1>
-                        <img id="hands-in-heart" src="<?php echo get_template_directory_uri() ?>./assets/img/hands-in-heart.png" alt="hands-in-heart" title="hands-in-heart"/>
+                        <img id="hands-in-heart" src="<?php echo get_template_directory_uri() ?>/assets/img/hands-in-heart.png" alt="hands-in-heart" title="hands-in-heart"/>
                         Venha nos fazer uma visita !
                     </h1>
                 </div>

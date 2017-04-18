@@ -35,7 +35,10 @@
               <p><strong>Endereço:</strong><br> Rua Florinda Marques, 25, Planalto, Muriaé - MG</p>
               <p><strong>Telefone:</strong><br> (32) 3232-4545</p>
               <p><strong>Redes Sociais</strong><br></p>
-              <div class="footer-social-media"><a id="facebook-top" href="#"><img src="./assets/img/facebook.svg"></a> <a id="youtube-top" href="#"><img src="./assets/img/youtube.svg"></a></div>
+              <div class="footer-social-media">
+              <a id="facebook-top" href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/facebook.svg"></a>
+              <a id="youtube-top" href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/youtube.svg"></a>
+              </div>
               <p></p>
             </div>
           </div>
