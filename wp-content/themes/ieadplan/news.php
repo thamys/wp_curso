@@ -28,7 +28,7 @@
                                 <div class="col-md-7">
                                 <h2 class="featurette-heading"><?php the_title();?></h2>
                                 <p class="lead"><?php the_excerpt();?></p>
-                                <a class="read-more" href="news-details.html">Continuar lendo<img src="<?php echo get_template_directory_uri() ?>//assets/img/long-arrow-right.svg"></a>
+                                <a class="read-more" href="<?php the_permalink() ?>">Continuar lendo<img src="<?php echo get_template_directory_uri() ?>//assets/img/long-arrow-right.svg"></a>
                                 </div>
                             </div>
                             <hr class="featurette-divider">

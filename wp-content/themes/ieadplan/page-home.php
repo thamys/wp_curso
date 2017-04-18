@@ -79,7 +79,7 @@
                                     <div class="col-md-7">
                                         <h2 class="featurette-heading"> <?php the_title(); ?> </h2>
                                         <p class="lead"><?php the_content() ?></p>
-                                        <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
+                                        <a href="<?php the_permalink() ?>" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
                                     </div>
                                 </div>
                                 <hr class="featurette-divider">
@@ -211,7 +211,7 @@
                                         <h1 class="title border-red">Ultimo post</h1>
                                         <h2 class="post-heading"><?php the_title(); ?></h2>
                                         <p class="lead"><?php the_content() ?></p>
-                                        <a href="#" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
+                                        <a href="<?php the_permalink() ?>" class="read-more">Continuar lendo <img src="<?php echo get_template_directory_uri() ?>./assets/img/long-arrow-right.svg"></a>
                                     </div>
                                 </div>
                             </div>
