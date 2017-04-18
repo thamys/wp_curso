@@ -1,0 +1,13 @@
+.text{
+	margin-bottom: 30px;
+}
+
+.text.two-columns{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+.image-column{
+    padding-left: 0;
+}

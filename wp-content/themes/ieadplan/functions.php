@@ -28,8 +28,24 @@ function carrega_scripts(){
     wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Abel|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i', array(), '1,0', 'all');
 
     /* Custom styles for this template */
-    wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/home.css', array(), '1,0', 'all');
 
+    //if ( is_home() )
+        wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/home.css', array(), '1,0', 'all');
+    //if ( is_page('jesus'))
+        wp_enqueue_style('home', get_template_directory_uri() . '/assets/css/jesus.css', array(), '1,0', 'all');
+    //if ( is_page('a-igreja') ) // using page slug
+        wp_enqueue_style('a-igreja', get_template_directory_uri() . '/assets/css/the-church.css', array(), '1,0', 'all');
+    //if ( is_page('blog') ) // using page slug
+        wp_enqueue_style('blog', get_template_directory_uri() . '/assets/css/blog.css', array(), '1,0', 'all');
+        //if ( is_page('noticias'))
+        wp_enqueue_style('noticias', get_template_directory_uri() . '/assets/css/news.css', array(), '1,0', 'all');
+        //if ( is_page('eventos'))
+        wp_enqueue_style('eventos', get_template_directory_uri() . '/assets/css/events.css', array(), '1,0', 'all');
+    //if ( is_page('contato') ) // using page slug
+        wp_enqueue_style('contato', get_template_directory_uri() . '/assets/css/contact-us.css', array(), '1,0', 'all');
+    
+    /* Um arquivo default */
+    wp_enqueue_style('default', get_template_directory_uri() . '/assets/css/layout.css', array(), '1,0', 'all');
 
 
 

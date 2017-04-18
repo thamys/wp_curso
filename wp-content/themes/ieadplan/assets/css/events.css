@@ -1,0 +1,62 @@
+/* Events
+------------------------- */
+
+.date {
+    background-color: rgba(255,248,165,0.9);
+    padding: 15px;
+    position: absolute;
+}
+
+.date > span{
+    display: block;
+    font-size: 18px;
+}
+
+
+.date > span.day{
+  border-bottom: 1px solid #d83636;
+}
+
+.featurette-divider {
+  margin: 30px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette .featurette-heading {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #332a2a;
+  font-size: 21px;
+}
+
+.featurette .lead{
+	margin-bottom: 0;
+    font-size: 16px;
+}
+
+.featurette .read-more{
+	font-family: 'Abel', sans-serif;
+	text-transform: uppercase;
+	color: #808080;
+	float: right;
+}
+.featurette .read-more > img{
+	width: 30px;	
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0;
+  }
+}

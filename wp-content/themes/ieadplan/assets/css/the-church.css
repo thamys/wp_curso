@@ -1,0 +1,70 @@
+/* Page
+------------------------- */
+.title.inner-title{
+	font-size: 21px;
+	margin: 10px 0 15px;
+}
+
+.text{
+	margin-bottom: 30px;
+}
+
+.text.two-colums{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.parallax { 
+    /* The image used */
+    background-image: url("../img/banner.png");
+
+    /* Set a specific height */
+    min-height: 20px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-bottom: 30px;
+}
+
+.parallax > div{
+	background-color: rgba(51,42,42,0.85);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	min-height: 20px;;
+	padding: 25px 0 0;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+   color: #fff;
+}
+.marketing h2 {
+  font-weight: 600;
+	color: #FFF8A5;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing .col-lg-4 img{
+	border: 2px solid #FFF8A5;
+}
+
+/* About the Shepherds
+-------------------------------------------------- */
+.shepherds .col-md-4{
+	padding-left: 0;
+}
+
+.shepherds .title.inner-title{
+	margin: 10px 15px 15px;
+}

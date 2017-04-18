@@ -12,6 +12,17 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+a{
+	color: #d83636;
+	transition: all 0.3s;
+}
+
+a:hover{
+	color: #332a2a;
+	font-style: oblique;
+	transition: all 0.7s;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -107,6 +118,10 @@ body {
     padding-bottom: 15px;
 }
 
+.nav.navbar-nav.nav-justified > li > a:hover{
+	background-color: #332a2a;
+}
+
 .nav.navbar-nav.nav-justified > li > a > span {
 	display: table;
 	margin: 0 auto;
@@ -121,41 +136,44 @@ body {
 	padding-bottom: 3px;
 }
 
-/* Page
-------------------------- */
+/* Breadcrumb */
+.breadcrumb >.container{
+	margin-bottom: 0;
+}
 
+/* Content default style */
 .title{
 	font-family: 'Abel', sans-serif;
 	text-transform: uppercase;
     display: table;
-    margin: 30px auto 50px;
+    margin: 10px auto 50px;
 }
 
-.border-red{
+.title.border-red, .title .border-red{
     border-bottom: 5px solid #D83636;
 }
 
-.border-yellow{
+.title.border-yellow, .title .border-yellow{
     border-bottom: 5px solid #FFF8A5;
 }
 
-.title.inner-title{
-	font-size: 21px;
-	margin: 10px 0 15px;
+/* Pagination */
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
+	background-color: #d83636;
+	border-color: #d83636;
 }
 
-.text{
-	margin-bottom: 30px;
+.pagination > li > a, .pagination > li > span{
+	color: #d83636
 }
 
-.text.two-colums{
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	-moz-column-count: 2; /* Firefox */
-	column-count: 2;
+.pagination > li > a:hover, .pagination > li > spa:hover{
+	color: #d83636;
+	font-weight: bold;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* Schedule of Worship */
+
 .parallax { 
     /* The image used */
     background-image: url("../img/banner.png");
@@ -180,38 +198,37 @@ body {
 	padding: 25px 0 0;
 }
 
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-   color: #fff;
-}
-.marketing h2 {
-  font-weight: 600;
-	color: #FFF8A5;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+
+.schedule-of-worship, .contact-info {
+    color: #fff;
 }
 
-.marketing .col-lg-4 img{
-	border: 2px solid #FFF8A5;
+.schedule-of-worship .title {
+    display: block;
+    text-align: left;
+    margin: 0 0 20px;
 }
 
-/* About the Shepherds
--------------------------------------------------- */
-.shepherds .col-md-4{
-	padding-left: 0;
+.schedule-of-worship .two-colums {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
 }
 
-.shepherds .title.inner-title{
-	margin: 10px 15px 15px;
+.contact-info .title {
+    display: block;
+    text-align: right;
+    margin: 0 0 20px;
 }
 
-/* Verse of the day
-------------------------- */
+.footer-social-media img {
+    height: 30px;
+}
+
+/* Verse of the day */
+
 .verse-of-the-day{
-	margin: 0;
+	margin: 35px 0 0 0;
 }
 
 .verse-of-the-day h1.title{
@@ -231,35 +248,7 @@ body {
 	text-align: center;
 }
 
-.schedule-of-worship, .contact-info{
-	color: #fff;
-}
-
-.schedule-of-worship .two-colums{
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	-moz-column-count: 2; /* Firefox */
-	column-count: 2;
-}
-
-.schedule-of-worship .title{
-	display: block;
-	text-align: left;
-	margin: 0 0 20px;
-}
-
-.contact-info .title{
-	display: block;
-	text-align: right;
-	margin: 0 0 20px;
-}
-
-.footer-social-media img{
-	height: 30px;
-}
-
-/* Footer
-------------------------- */
-footer {
+footer.site-footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -273,11 +262,11 @@ footer {
 	align-items: center;
 }
 
-footer p{
+footer.site-footer p{
 	margin: 0;
 }
 
-footer a{
+footer.site-footer a{
 	color: #FFF8A5;
 }
 
@@ -294,5 +283,4 @@ footer a{
     padding-right: 0;
     padding-left: 0;
   }
-
 }

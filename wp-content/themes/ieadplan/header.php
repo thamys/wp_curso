@@ -74,3 +74,10 @@
             </nav>
         </div>
     </header>
+    <div class="breadcrumb">
+        <ul class="container breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">Notícias</a></li>
+        <li class="active">Novos Membros</li>
+        </ul>
+    </div>
